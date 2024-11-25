@@ -49,7 +49,7 @@ body {
 .carousel-inner img {
   height: 590px;
   width: 100%; 
-  object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin distorsión */
+  object-fit: cover; 
 }
 
 .container-fluid {
@@ -63,15 +63,7 @@ body {
   border-radius: 2%;
 
 }
-@media (max-width: 480px) { /* Aplica solo a pantallas de 480px o menos */
-  .carousel-inner img {
-    width: 100%;         /* La imagen ocupa todo el ancho del contenedor */
-    max-width: 480px;    /* Limita el ancho máximo a 480px */
-    height: auto;        /* Mantiene la proporción de altura */
-    object-fit: contain; /* Evita recortes y asegura que toda la imagen se muestre */
-    margin: 0 auto;      /* Centra la imagen horizontalmente si es más pequeña */
-  }
-}
+
 
 @keyframes slide-in {
   from {
@@ -84,13 +76,6 @@ body {
   }
 }
 
-@media (max-width: 768px) {
-  .carousel-caption {
-    font-size: 14px;
-    padding: 10px;
-  }
-}
-
 .carousel-item {
   padding-top: 0%;
  
@@ -98,34 +83,9 @@ body {
 /*Fin de estilos del carrusel*/
 
 
-
-/*Estilos footer*/
-
 footer{
   background-color: rgb(197, 201, 164);
 }
-
-
-/* Adaptación para pantallas pequeñas */
-@media (max-width: 480px) {
-  .footer-container {
-    flex-direction: column; /* Cambia la dirección de los íconos a columna */
-    align-items: center; /* Centra los elementos */
-    padding: 0%;
-  }
-  
-  .footer-item {
-    margin: 10px 0; /* Espaciado entre los elementos */
-    width: 100%; /* Asegura que cada ítem ocupe el 100% del contenedor */
-  }
-  
-  .footer-item img {
-    width: 80%; /* Hace que las imágenes sean un poco más pequeñas en pantallas pequeñas */
-    max-width: 120px; /* Limita el tamaño máximo de las imágenes */
-  }
-}
-
-/*Fin estilos footer*/
 
 #monet{
   width: 315px;
@@ -206,8 +166,6 @@ footer{
 }
 
 /*Estilos para el footer*/
-
-/* Contenedor principal del footer */
 .footer-container {
   display: flex; 
   justify-content: center; 
@@ -224,6 +182,7 @@ footer{
   text-align: center;
   margin-top: 20px;
 }
+/*Fin estilos del footer*/
 
 
 /*Estilos para el formulario de contacto*/
@@ -384,8 +343,6 @@ iframe {
   -ms-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
-
-
 .contact100-form {
   width: 100%;
 }
@@ -515,19 +472,6 @@ textarea.input100 {
   -ms-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.8);
 }
 
-@media (max-width: 768px) {
-  .wrap-contact100 {
-      padding: 72px 50px 25px 50px;
-  }
-}
-
-@media (max-width: 576px) {
-  .wrap-contact100 {
-      padding: 72px 15px 25px 15px;
-  }
-}
-
-
 .validate-input {
   position: relative;
 }
@@ -602,17 +546,6 @@ textarea.input100 {
   height: 62px;
   top: 0px;
   right: 28px;
-}
-
-@media (max-width: 576px) {
-  .alert-validate::before {
-      padding: 0 30px 0 10px;
-  }
-
-  .true-validate::after,
-  .btn-hide-validate {
-      right: 10px;
-  }
 }
 
 .contact100-more {
@@ -692,4 +625,53 @@ textarea.input100 {
   #index-h2{
     justify-content: center;
   }
+
+  .carousel-inner img {
+    width: 100%;         
+    max-width: 480px;    
+    height: auto;        
+    object-fit: contain; 
+    margin: 0 auto;      
+  }
+  .footer-container {
+    flex-direction: column; 
+    align-items: center; 
+    padding: 0%;
+  }
+  
+  .footer-item {
+    margin: 10px 0; 
+    width: 100%; 
+  }
+  
+  .footer-item img {
+    width: 80%; 
+    max-width: 120px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .wrap-contact100 {
+      padding: 72px 50px 25px 50px;
+  }
+  
+  .carousel-caption {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrap-contact100 {
+      padding: 72px 15px 25px 15px;
+  }
+
+  .alert-validate::before {
+    padding: 0 30px 0 10px;
+}
+
+.true-validate::after,
+.btn-hide-validate {
+    right: 10px;
+}
 }
