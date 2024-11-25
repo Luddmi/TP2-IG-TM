@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal de Información</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+    <!-- Footer con dos íconos -->
+    <footer>
+        <div class="container p-4 mt-5 text-center">
+            <!-- Ícono de información personal -->
+            <a id="info-icon" style="cursor: pointer;">
+                <img src="../img/icono-info.png" alt="Información" style="width: 100px; margin-left: 15px;">
+            </a>
+        </div>
+    </footer>
+
+    <!-- Modal de Información -->
+    <div id="info-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="info-content">
+                <h2>Sobre mí</h2>
+                <p>
+                <h3>Ludmila Tejada</h3>
+                Estudiante: "Diseño Multimedial" - UNA Multimediales.
+                Cátedra: "Informática General" - Drelichman.
+                Turno: Mañana.
+                Año: 2024
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Referencias al modal de información
+        let infoModal = document.querySelector("#info-modal");
+
+        // Referencia al ícono del modal
+        let infoIcon = document.querySelector("#info-icon");
+
+        // Referencia al botón de cierre
+        let closeBtn = infoModal.querySelector(".close");
+
+        // Función para mostrar el modal
+        function showInfoModal() {
+            infoModal.style.display = 'block';
+        }
+
+        // Función para cerrar el modal
+        function closeInfoModal() {
+            infoModal.style.display = 'none';
+        }
+
+        // Evento para abrir el modal al hacer clic en el ícono
+        infoIcon.addEventListener('click', function (e) {
+            e.preventDefault();
+            showInfoModal();
+        });
+
+        // Evento para cerrar el modal al hacer clic en la 'X'
+        closeBtn.addEventListener('click', closeInfoModal);
+
+        // Evento para cerrar el modal al hacer clic fuera de él
+        window.addEventListener('click', function (e) {
+            if (e.target === infoModal) {
+                closeInfoModal();
+            }
+        });
+    </script>
+
+</body>
+
+</html>

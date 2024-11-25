@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+        rel="stylesheet">
     <title>Trayectoria</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -22,7 +27,7 @@
     <div class="content">
 
 
-        <nav class="navbar navbar-expand-lg mx-auto col-9  sm-p-2">
+        <nav class="navbar navbar-expand-lg mx-auto col-12  sm-p-2">
             <div id="menu" class="container-fluid sm p-2">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,24 +55,156 @@
                 </div>
             </div>
         </nav>
+        <div class="container col-12">
+            <div class="row">
+                <h2 class="col-6 p-4">¿Cuál fue su trayectoria?</h2>
+                <div class="col-7 mx-auto">
+                    <p>A pesar de la resistencia de su familia, que esperaba que se dedicara al comercio, Monet decidió
+                        seguir su pasión artística. En 1859, se mudó a París, el epicentro del arte en Francia, donde se
+                        inscribió en la Académie Suisse, un estudio informal donde los estudiantes trabajaban de manera
+                        más libre que en las academias tradicionales. En París, conoció a otros jóvenes artistas que
+                        también estaban desafiando las convenciones del arte académico. </p>
+                    <h3>Pionero del impresionismo</h3>
+                    <p>Claude Monet es conocido como el pionero y, a menudo, llamado el "padre del impresionismo", por
+                        ser uno de los principales impulsores y exponentes de este movimiento revolucionario.
+                    </p>
+                </div>
+
+                <img class="col-6 " id="impresion" src="./img.nav/trayectoria.webp" alt="Impresion-Cuadro Monet">
+                <div class="col-12 ms-3">
+                    <p>
+                        El
+                        impresionismo fue un giro radical en el arte del siglo XIX, ya que rompió con las reglas
+                        establecidas por la Academia de Bellas Artes de París, que dictaba que los cuadros debían seguir
+                        temas históricos, mitológicos o religiosos y ser pintados con un alto grado de detalle.
+                        En lugar de seguir estos lineamientos, Monet y sus colegas impresionistas optaron por pintar
+                        escenas cotidianas y paisajes, y hacerlo de una manera que capturara la luz, el color y el
+                        movimiento de manera más espontánea. <br />
+                        Monet rechazó las líneas definidas y los detalles precisos,
+                        prefiriendo en su lugar utilizar pinceladas rápidas y sueltas que transmitieran la impresión
+                        visual de un momento fugaz. <br />
+                        Su obra "Impresión, sol naciente" (1872) es el ejemplo más famoso de
+                        este enfoque, y fue de este cuadro que el crítico Louis Leroy acuñó el término "impresionismo",
+                        aunque inicialmente como una burla.
+                        Monet revolucionó el concepto de la pintura al aire libre, buscando capturar la luz natural en
+                        distintas horas del día y en diferentes condiciones atmosféricas. Sus experimentos con series de
+                        cuadros, como los de la catedral de Ruan y los almiares, mostraron cómo los efectos de la luz y
+                        el clima podían transformar una misma escena. Estos trabajos no solo fueron técnicamente
+                        innovadores, sino que también reflejaron una nueva forma de percibir el mundo, priorizando la
+                        impresión visual sobre la representación literal. <br />
+                        En este sentido, Monet no solo fue un pionero técnico, sino también conceptual. Su enfoque abrió
+                        la puerta a un modo de pintar que enfatizaba la percepción individual y el momento presente,
+                        influyendo en generaciones de artistas y en el desarrollo de corrientes posteriores, como el
+                        postimpresionismo y el arte moderno.
+                        Monet dedicó gran parte de su vida a perfeccionar este estilo, y en sus últimos años, sus obras,
+                        especialmente las series de los nenúfares en su jardín de Giverny, se volvieron más abstractas
+                        y casi meditativas, anticipando movimientos como el expresionismo abstracto del siglo XX.
+                    </p>
+                </div>
+            </div>
+        </div>
 
 
 
         <footer>
-            <div class="container-fluid p-4 mt-5">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ipsam optio inventore pariatur,
-                    expedita
-                    illo, perspiciatis ipsum, doloremque iure repellat et consequuntur? Vel distinctio doloribus
-                    deleniti
-                    excepturi maxime fugiat amet? Acá irán los enlaces hacia la UNA, Instagram, Contacto, e Información
-                    del
-                    alumno. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed ratione porro id facere error
-                    odio, fuga
-                    culpa! Ducimus sint enim, facilis corrupti aspernatur iure suscipit blanditiis, cupiditate sapiente
-                    corporis
-                    eos.</p>
+            <div class="footer-container">
+                <!-- Ícono de contacto -->
+                <div class="footer-item">
+                    <a href="#" id="contact-icon" style="cursor: pointer;">
+                        <img src="../img/icono-contacto.png" alt="Contacto" style="width: 100px;">
+                    </a>
+                    <p>Contacto</p>
+                </div>
+                <!-- Ícono de información -->
+                <div class="footer-item">
+                    <a id="info-icon" style="cursor: pointer;">
+                        <img src="../img/info-alumno.png" alt="Información" style="width: 130px;">
+                    </a>
+                    <p>Sobre mí</p>
+                </div>
+                <div class="footer-item">
+                    <a href="https://multimedia.una.edu.ar/" target="_blank">
+                        <img src="../img/una-multi.png" alt="Información" style="width: 170px;">
+                    </a>
+                </div>
             </div>
         </footer>
+
+
+        <!-- Modal de Contacto -->
+        <div id="contact-modal" class="modal">
+            <div class="modal-content">
+                <span class="close contact-close">&times;</span>
+                <form class="contact100-form">
+                    <span class="contact100-form-title">Contacte con nosotros</span>
+                    <div class="wrap-input100">
+                        <input class="input100" type="text" name="name" placeholder="Nombre completo" required>
+                    </div>
+                    <div class="wrap-input100">
+                        <input class="input100" type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="wrap-input100">
+                        <textarea class="input100" name="message" placeholder="Mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="contact100-form-btn">Enviar Email</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Modal de Información -->
+        <div id="info-modal" class="modal">
+            <div class="modal-content">
+                <span class="close info-close">&times;</span>
+                <div class="info-content">
+                    <h2>Sobre mí</h2>
+                    <p>
+                    <h3>Ludmila Tejada</h3>
+                    Estudiante: "Diseño Multimedial" - <br> UNA Multimediales <br>
+                    Cátedra: "Informática General" - Drelichman<br>
+                    Turno: Mañana <br>
+                    Año: 2024
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Script para manejar los modales -->
+        <script>
+            // Modal de Contacto
+            const contactModal = document.querySelector("#contact-modal");
+            const contactIcon = document.querySelector("#contact-icon");
+            const contactClose = document.querySelector(".contact-close");
+
+            contactIcon.addEventListener("click", function (e) {
+                e.preventDefault();
+                contactModal.style.display = "block";
+            });
+
+            contactClose.addEventListener("click", function () {
+                contactModal.style.display = "none";
+            });
+
+            // Modal de Información
+            const infoModal = document.querySelector("#info-modal");
+            const infoIcon = document.querySelector("#info-icon");
+            const infoClose = document.querySelector(".info-close");
+
+            infoIcon.addEventListener("click", function (e) {
+                e.preventDefault();
+                infoModal.style.display = "block";
+            });
+
+            infoClose.addEventListener("click", function () {
+                infoModal.style.display = "none";
+            });
+
+            // Cerrar modales al hacer clic fuera
+            window.addEventListener("click", function (e) {
+                if (e.target === contactModal) contactModal.style.display = "none";
+                if (e.target === infoModal) infoModal.style.display = "none";
+            });
+        </script>
+
     </div>
 
 

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+    <!-- Footer con icono -->
+    <footer>
+        <div class="container p-4 mt-5 text-center">
+            <a href="#" id="contact-icon">
+                <img src="../img/icono-contacto.png" alt="Contacto" style="width: 50px; cursor: pointer;">
+            </a>
+        </div>
+    </footer>
+
+    <!-- Modal oculto -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form class="contact100-form">
+                <span class="contact100-form-title">Contacte con nosotros</span>
+                <div class="wrap-input100">
+                    <input class="input100" type="text" name="name" placeholder="Nombre completo" required>
+                </div>
+                <div class="wrap-input100">
+                    <input class="input100" type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="wrap-input100">
+                    <textarea class="input100" name="message" placeholder="Mensaje" required></textarea>
+                </div>
+                <button type="submit" class="contact100-form-btn">Enviar Email</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Referencias al modal y botones
+        let modal = document.querySelector("#contact-modal");
+        let icon = document.querySelector("#contact-icon");
+        let closeBtn = document.querySelector(".close");
+
+        // Mostrar modal al hacer clic en el icono
+        icon.addEventListener('click', function (e) {
+            e.preventDefault();
+            modal.style.display = 'block';
+        });
+
+        // Ocultar modal al hacer clic en la 'X'
+        closeBtn.addEventListener('click', function () {
+            modal.style.display = 'none';
+        });
+
+        // Ocultar modal al hacer clic fuera de la ventana
+        window.addEventListener('click', function (e) {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+
+</html>
